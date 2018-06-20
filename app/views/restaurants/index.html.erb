@@ -1,0 +1,13 @@
+<h1>Search open restaurants:</h1>
+<%= form_tag restaurants_path, method: :get do %>
+  <%= select_tag 'weekday', options_for_select(weekday_options, @weekday) %>
+  <%= select_tag 'time', options_for_select(time_options, @time) %>
+  <%= submit_tag 'Search' %>
+<% end %>
+
+<p>Results:</p>
+<ul>
+  <% @restaurants.each do |restaurant| %>
+    <li><%= render_restaurant(restaurant) %></li>
+  <% end %>
+</ul>

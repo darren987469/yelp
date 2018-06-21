@@ -98,3 +98,5 @@ rails s        # start the server
 ```
 
 Go [localhost:3000](http://localhost:3000)
+
+![Demo](https://github.com/darren987469/yelp/blob/master/gifs/demo.gif)

@@ -1,4 +1,6 @@
 class OpenHour < ApplicationRecord
+  belongs_to :restaurant
+
   enum weekday: {
     mon: 1,
     tue: 2,

@@ -98,3 +98,9 @@ rails s        # start the server
 ```
 
 Go [localhost:3000](http://localhost:3000)
+
+## Testing
+
+```sh
+rspec
+```

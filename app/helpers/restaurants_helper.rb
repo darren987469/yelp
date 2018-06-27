@@ -14,12 +14,11 @@ module RestaurantsHelper
   end
 
   def weekday_options
-    Date::ABBR_DAYNAMES.map { |name| [name, name.downcase] }
+    Date::DAYNAMES.each_with_index.map { |name, index| [name, index] }
   end
 
   def default_weekday_option
-    today = Date.today
-    Date::ABBR_DAYNAMES[today.wday].downcase
+    Date.today.wday
   end
 
   def render_restaurant(restaurant)
